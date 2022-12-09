@@ -12,7 +12,7 @@ with open("day3_input.txt", "r") as file:
             line_list = list("".join((len(line_list)+1) * line_list))
         if len(line_list) >= start and line_list[start] == "#":
             encounter = encounter + 1
-            start = start + 3
+            start = start + start
         elif len(line_list) >= start and line_list[start] == ".":
             start = start + 3
 
