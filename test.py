@@ -17,7 +17,12 @@ def number_of_trees(right, down):
             start = start + right
         elif len(line_list) >= start and line_list[start] == ".":
             start = start + right
-    return encounter
+    return new
 
 
-print(number_of_trees(1, 1))
+a = ['#..a#.#..#']
+right = 13
+new = list("".join(a))
+print(len(new))
+if len(new) - 1 < right:
+    print(new[right - len(new)])
