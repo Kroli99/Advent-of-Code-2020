@@ -17,6 +17,6 @@ with open("day3_input.txt", "r") as file:
                 start = start + right
             elif len(line_list) >= start and line_list[start] == ".":
                 start = start + right
-        return range(len(new))
+        return encounter
 
-    print(number_of_trees(1, 2), number_of_trees(1, 1), number_of_trees(3, 1))
+    print(number_of_trees(1, 2) * number_of_trees(1, 1) * number_of_trees(3, 1) * number_of_trees(7, 1) * number_of_trees(5, 1))
